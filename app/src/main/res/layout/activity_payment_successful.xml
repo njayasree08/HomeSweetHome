@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_gray_bg"
+    tools:context=".PaymentSuccessfulActivity">
+
+    <View
+        android:id="@+id/headerPaySuccess"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/headerPaySuccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headerPaySuccess" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/headerPaySuccess">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_input_field"
+                android:padding="16dp"
+                android:src="@android:drawable/checkbox_on_background"
+                app:tint="@color/theme_accent_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Payment Successful"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Transaction ID: #9600764319"
+                android:textColor="@color/theme_text_hint" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="24dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="DETAILS"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:stretchColumns="1">
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Time" android:textColor="@color/theme_text_hint" />
+                    <TextView android:id="@+id/tvTime" android:gravity="end" android:text="10:09 PM" android:textColor="@color/black" android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Date" android:textColor="@color/theme_text_hint" />
+                    <TextView android:id="@+id/tvDate" android:gravity="end" android:text="May 31, 2026" android:textColor="@color/black" android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Payment Method" android:textColor="@color/theme_text_hint" />
+                    <TextView android:id="@+id/tvMethod" android:gravity="end" android:text="UPI" android:textColor="@color/black" android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Status" android:textColor="@color/theme_text_hint" />
+                    <TextView android:gravity="end" android:text="Success" android:textColor="@color/theme_accent_green" android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:layout_marginTop="8dp">
+                    <TextView android:text="Total Amount" android:textColor="@color/black" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvAmountPaid" android:gravity="end" android:text="$37.90" android:textColor="@color/black" android:textSize="18sp" android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnTrackOrder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/theme_primary"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

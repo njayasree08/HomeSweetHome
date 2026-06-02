@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307780235379",
+    "project_id": "project-11c7d0c8-ff7f-48a6-ae9",
+    "storage_bucket": "project-11c7d0c8-ff7f-48a6-ae9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307780235379:android:3e89b1fa6683766d9ffa06",
+        "android_client_info": {
+          "package_name": "com.example.homesweethome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkF7I_6aQ39mHWidx6vSgIgFhzd76N3s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_gray_bg"
+    tools:context=".DashboardActivity">
+
+    <View
+        android:id="@+id/headerBg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="WELCOME TO DASHBOARD"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcomeUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="HOMESWEETHOME WELCOMES'S YOU USER"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnViewHomeSweet"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/theme_accent_green"
+            app:cardCornerRadius="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="VIEW\nPRODUCT"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnViewCart"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/theme_primary"
+            app:cardCornerRadius="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="VIEW\nCART"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_input_field"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:hint="Search for products..."
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/llButtons" />
+
+    <TextView
+        android:id="@+id/tvRecommendedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="RECOMMENDED FOR YOU"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecommendedLabel">
+
+        <LinearLayout
+            android:id="@+id/recommendationsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpiPinActivity">
+
+    <View
+        android:id="@+id/upiPinHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="UPI PIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/upiPinHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upiPinHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Secure Payment"
+        android:textColor="@color/theme_text_hint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/upiPinHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upiPinHeader" />
+
+    <TextView
+        android:id="@+id/tvMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="TASTY SPOT"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upiPinHeader" />
+
+    <TextView
+        android:id="@+id/tvAmountUpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="$122.44"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMerchant" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#EEEEEE"
+        app:layout_constraintTop_toBottomOf="@id/tvAmountUpi" />
+
+    <TextView
+        android:id="@+id/tvEnterPinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ENTER 6-DIGIT UPI PIN"
+        android:textColor="@color/theme_text_hint"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <EditText
+        android:id="@+id/etUpiPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:letterSpacing="0.5"
+        android:maxLength="6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterPinLabel" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="@color/theme_accent_green"
+        app:layout_constraintEnd_toEndOf="@id/etUpiPin"
+        app:layout_constraintStart_toStartOf="@id/etUpiPin"
+        app:layout_constraintTop_toBottomOf="@id/etUpiPin" />
+
+    <ImageView
+        android:id="@+id/btnSubmitUpi"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/bg_input_field"
+        android:padding="16dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/theme_accent_green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
