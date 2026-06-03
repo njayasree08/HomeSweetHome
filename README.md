@@ -22,7 +22,7 @@ E-commerce has transformed the way people shop and conduct business, making tran
 <img width="300" height="700" alt="Screenshot_20260603_113815 1" src="https://github.com/user-attachments/assets/3fbe1e4a-5dc3-4299-b314-cf271d0c314a" />
 <img width="300" height="700" alt="Screenshot_20260602_211335 1" src="https://github.com/user-attachments/assets/2d7c48ba-a220-4f60-949a-2a236f0009c2" />
 <img width="300" height="700" alt="Screenshot_20260602_211417 1" src="https://github.com/user-attachments/assets/ae0d910d-4a04-4245-8f05-c3bbdb30e1ac" />
-<img width="300" height="700" alt="Screenshot_20260602_211434 1" src="https://github.com/user-attachments/assets/407044a3-1067-4db7-893d-4f37585490c9" />
+<img width="300" height="700" alt="Screenshot_20260603_114502 1" src="https://github.com/user-attachments/assets/107fc546-2942-42e9-974b-76c8aa21ee12" />
 <img width="300" height="700" alt="Screenshot_20260602_211443 1" src="https://github.com/user-attachments/assets/37c59ae1-7ac7-451a-ac32-aa34b414e074" />
 <img width="300" height="700" alt="Screenshot_20260602_211509 1" src="https://github.com/user-attachments/assets/0a0ce68f-a089-4cf4-8de4-227f9b2d64f4" />
 <img width="300" height="700" alt="Screenshot_20260602_211526 1" src="https://github.com/user-attachments/assets/b9d3d343-8552-44cb-9930-69b8a5b3be94" />
